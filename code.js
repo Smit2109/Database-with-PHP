@@ -1,6 +1,7 @@
 function showFormSign() {
 	if(document.getElementById('formSignup').style.display == 'block'){
 		document.getElementById('formSignup').style.display = 'none';
+        
 	}
 	else{
 		document.getElementById('formSignup').style.display = 'block';
@@ -8,7 +9,7 @@ function showFormSign() {
         document.getElementById('formDelete').style.display = 'none';
 
         document.getElementById('buttonSign').style.display = 'none';
-        document.getElementById('buttonChange').style.display = 'block';
+        document.getElementBfyId('buttonChange').style.display = 'block';
         document.getElementById('buttonDelete').style.display = 'block';
 	}
 }

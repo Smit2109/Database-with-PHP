@@ -11,27 +11,9 @@ body {
     background-repeat: no-repeat;
 }
 
-.header-main {
-    position: absolute;
-    width: 100%;
-    height: 60px;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-.header-main div {
-    flex: 1;
-}
-
-form button {
+button {
     border-radius: 20px;
     border: 1px solid #000000;
-    background-color: #827b61;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: 0 0;
     color: #FFFFFF;
     font-size: 12px;
@@ -39,23 +21,14 @@ form button {
     padding: 12px 45px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    transition: transform 80ms ease-in;
-    margin-bottom: 10px;
-}
-#homepageButton{
-    margin-bottom: 15px;
-    color:green;
 }
 
 form {
     border-radius: 25px;
-    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     padding: 0 50px;
     height: 26%;
-    width: 20%;
     text-align: center;
     margin-bottom: 15px;
     color: white;
@@ -66,33 +39,371 @@ form h1, button {
     margin: 0;
 }
 
-input {
+input, select {
     background-color: #b2a67a;
     border: none;
     text-align: center;
     padding: 12px 15px;
     margin: 8px 0;
-    width: 100%;
+    width: 10em;
     color: black;
     border-radius: 10px;
 }
 
-
-
-@media screen and (max-width: 1300px) {
-    form {
-        width: 45%;
-    }
+.homeButton, .modifyButton, .searchButton, .allClientsTable, .searchOptions, .carsOrderButton, .clientsModify, .upcomingOrderButton, .higherOrderButton, .addOrderPage, .topButton, .modifyOrderButton, .updateOrderPage, .deleteOrderPage{
+    background-color: #3f8ce5;
+    margin-bottom: 10em;
 }
 
-@media screen and (max-width: 800px) {
-    form {
-        width: 65%;
-    }
+.indexPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15em;
+}
+.indexPage button{
+    background-color: #3f8ce5;
+    display: block;
+    width:25%;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
 }
 
-@media screen and (max-width: 600px) {
-    form {
-        width: 80%;
-    }
+
+.form_modify{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+}
+
+.form_modify form{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.form_modify button, input{
+    display: block;
+    width:100%;
+    font-size: 1.5em;
+}
+
+.form_modify h1{
+    font-size: 2.6em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.form_modify input{
+    background-color: white;
+    color: black;
+}
+
+.form_modify button{
+    background-color: rgb(63, 140, 229);
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+.form_modify .submitAddClass{
+    background-color: green;
+}
+
+.form_modify .submitChangeClass{
+    background-color: green;
+}
+
+.form_modify .submitDeleteClass, .submitDeleteOrder{
+    background-color: green;
+}
+
+
+.add_order{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.add_order form{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.add_order button, input{
+    display: block;
+    width:100%;
+    font-size: 1.5em;
+}
+
+.add_order h1{
+    font-size: 2.6em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.add_order input{
+    background-color: white;
+    color: black;
+}
+
+.add_order button{
+    background-color: rgb(63, 140, 229);
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+.add_order .submitAddClass{
+    background-color: green;
+}
+
+.add_order .submitChangeClass{
+    background-color: green;
+}
+
+.add_order .submitDeleteClass, .submitDeleteOrder{
+    background-color: green;
+}
+
+
+.generalClass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.generalClass button{
+     margin-bottom: 0;
+     display: block;
+    width:25%;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+
+.searchOrder{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.higherOrder{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.upcomingOrder{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.carsOrder{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.higher{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.searchOrder form{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width:75%;
+}
+
+.higherOrder form{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width:75%;
+}
+
+.upcomingOrder button, input, select{
+    display: block;
+    width:100%;
+
+    font-size: 1.5em;
+}
+
+.carsOrder button, input, select{
+    display: block;
+    width:100%;
+    font-size: 1.5em;
+}
+
+.upcomingOrder button{
+    background-color: rgb(63, 140, 229);
+}
+
+.carsOrder button{
+    background-color: rgb(63, 140, 229);
+}
+
+.higher button, input, select{
+    display: block;
+    width:100%;
+
+    font-size: 1.5em;
+}
+
+.searchOrder button, input, select{
+    display: block;
+    width:100%;
+    font-size: 1.5em;
+}
+.higherOrder button, input, select{
+    display: block;
+    width:100%;
+
+    font-size: 1.5em;
+}
+
+.searchOrder input, select{
+    background-color: white;
+    color: black;
+}
+
+.searchOrder button{
+    background-color: green;
+    color: black;
+}
+
+.higherOrder input, select{
+    background-color: white;
+    color: black;
+}
+
+.higherOrder button{
+    background-color: green;
+    color: black;
+}
+
+.higher button{
+    background-color: green;
+    color: black;
+}
+
+.searchOrder h1{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.orderShow{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.carsOrdersShow{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.viewAllPage{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+}
+
+.viewAllPage button{
+    background-color: rgb(63, 140, 229);
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+.viewAllPage h1{
+    font-size: 2.6em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.topPageClassSpent form {
+    display: flex;
+    align-items: center;
+}
+
+.topPageClassOrders form {
+    display: flex;
+    align-items: center;
+}
+
+.topPageClassAverage form {
+    display: flex;
+    align-items: center;
+}
+
+.topPageClassNumber form {
+    display: flex;
+    align-items: center;
+}
+
+.topPageClassSpent input, select{
+    margin-right: 10px;
+}
+
+.topPageClassOrders input, select{
+    margin-right: 10px;
+}
+
+.topPageClassAverage input, select{
+    margin-right: 10px;
+}
+
+.topPageClassNumber select{
+    margin-right: 10px;
+}
+
+.topPageClassSpent p{
+    padding: 10px;
+    font-size: 2em;
+    text-align: center;
+    color:  white;
+}
+
+.topPageClassOrders p{
+    padding: 10px;
+    font-size: 2em;
+    text-align: center;
+    color:  white;
+}
+
+.topPageClassAverage p{
+    padding: 10px;
+    font-size: 2em;
+    text-align: center;
+    color:  white;
+}
+
+.topPageClassNumber p{
+    padding: 10px;
+    font-size: 2em;
+    text-align: center;
+    color:  white;
 }
